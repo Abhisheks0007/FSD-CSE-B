@@ -1,0 +1,25 @@
+.card{
+  width: 400px;
+  height: 400px;
+  background-color: rgb(78, 222, 225);
+  color: white;
+  border-radius: 10px 0px 0px 10px;
+  padding: 25px;
+  margin: 10px;
+  text-align: center;
+  border-left: 10px solid rgb(31, 34, 213);
+}
+.header{
+  background-color: black;
+  padding: 15px;
+  color: white;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.footer{
+  background-color: rgb(6, 206, 69);
+  padding: 15px;
+  color: white;
+margin-top: 10px;
+  text-align: center;
+}
