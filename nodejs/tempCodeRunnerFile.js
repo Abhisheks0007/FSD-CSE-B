@@ -1,0 +1,1 @@
+fs.cpSync("./a.txt","./b.txt");

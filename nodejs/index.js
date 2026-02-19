@@ -56,6 +56,21 @@ const fs = require('fs');
 
 // fs.appendFileSync("./a.txt",'cse department append');
 
-fs .writeFile("./b.txt","",()=>{});
+// fs .writeFile("./b.txt","",()=>{});
 
-// fs,appendFile("./.a.txt","")
+// fs.appendFile("./.a.txt","./b.txt",(err)=>{
+   
+// });
+
+// fs.cpSync("./a.txt","./b.txt");
+// fs.cp("./a.txt","./b.txt",(err)=>{
+//     if(err){
+//         console.log(err);
+//     }
+
+
+// fs.unlinkSync("./a.txt");
+
+const os=require('os');
+console.log("platform",os.platform());
+console.log("userinfo",os.userInfo());
