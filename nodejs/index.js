@@ -35,7 +35,7 @@
 // result= fs.readFileSync("./cse-c.txt","utf-8");
 // console.log(result);
 
-const fs = require('fs');
+// const fs = require('fs');
 // fs .writeFile("./a.txt","cse m department",()=>{});
 
 // fs.readFile("./a.txt","utf-8",(err,result)=>{
@@ -71,12 +71,26 @@ const fs = require('fs');
 
 // fs.unlinkSync("./a.txt");
 
-const os=require('os');
-console.log("platform",os.platform());
-console.log("userinfo",os.userInfo());
-console.log("cpu",os.arch());
-console.log("free memory",os.freemem());
-console.log("total memory",os.totalmem());
-console.log("uptime",os.uptime());
-console.log("home dir",os.homedir());
-console.log("hostname",os.hostname());
+// const os=require('os');
+// console.log("platform",os.platform());
+// console.log("userinfo",os.userInfo());
+// console.log("cpu",os.arch());
+// console.log("free memory",os.freemem());
+// console.log("total memory",os.totalmem());
+// console.log("uptime",os.uptime());
+// console.log("home dir",os.homedir());
+// console.log("hostname",os.hostname());
+
+const http=require('http');
+const fs=require('fs');
+
+const home = fs.readFileSync("./a.html","utf-8");
+
+const myserver = http.createServer((req,res)=>{
+        res.end(home);
+    
+})
+myserver.listen(8000,()=>
+    console.log('server is run')
+); 
+

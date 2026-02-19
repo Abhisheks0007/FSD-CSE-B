@@ -1,1 +1,1 @@
-fs.cpSync("./a.txt","./b.txt");
+const fs = require('fs');
