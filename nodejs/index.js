@@ -77,3 +77,4 @@ console.log("userinfo",os.userInfo());
 console.log("cpu",os.arch());
 console.log("free memory",os.freemem());
 console.log("total memory",os.totalmem());
+console.log("uptime",os.uptime());
